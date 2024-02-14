@@ -1,0 +1,86 @@
+:root {
+    --green: #00FF00;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+h1, p {
+    text-align: center;
+}
+.cat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Optional: Add some padding and define a max-width for better presentation */
+    padding: 20px;
+    max-width: 90%;
+}
+
+#catImage {
+    width: 500px; /* Fixed width for all images */
+    height: 500px; /* Fixed height for all images */
+    object-fit: contain; /* This will ensure that the image is scaled to maintain its aspect ratio while fitting within the element's content box */
+    object-position: center; /* This will center the image within the element's content box */
+    display: block; /* Remove bottom margin/whitespace beneath the image */
+}
+
+.btn-switch-image {
+    margin-top: 20px; /* Add space between the image and the button */
+    padding: 10px 20px; /* Add more space inside the button */
+    font-size: 16px; /* Increase the font size */
+    color: white; /* Light text color for contrast */
+    background-color: #007BFF; /* A distinct background color */
+    border: none; /* Remove the default border */
+    border-radius: 5px; /* Slightly rounded corners */
+    cursor: pointer; /* Change the cursor to indicate it's clickable */
+    outline: none; /* Remove the outline to clean up the appearance */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn-switch-image:hover {
+    background-color: #0056b3; /* Darken the button on hover for interaction feedback */
+}
+
+
+body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+li {
+    list-style: circle;
+}
+.list {
+    list-style: square;
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Adjust this value as needed to position it from the right edge */
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+.dark-theme
+{
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+
+
